@@ -62,20 +62,20 @@ const App = () => {
                 <button onClick={handleParse}>Parse</button>
                 <button onClick={handleDownload}>Download</button>
             </div>
-//             <div style={{ marginTop: "3rem" }}>
-//                 {error ? error : !data || !data.length ? "No data" : data.map((row, idx) => (
-//                     <table className="data-table">
-//                     <tbody className="data-tbody">
-//                       {data.map((row, idx) => (
-//                         <tr key={idx}>
-//                           {row.map((col, idx) => <td key={idx}>{col}</td>)}
-//                         </tr>
-//                       ))}
-//                     </tbody>
-//                   </table>                  
-//                 ))}
-//             </div>
-        <div style={{ marginTop: "3rem" }}>
+            {/* <div style={{ marginTop: "3rem" }}>
+                {error ? error : !data || !data.length ? "No data" : data.map((row, idx) => (
+                    <table className="data-table">
+                    <tbody className="data-tbody">
+                      {data.map((row, idx) => (
+                        <tr key={idx}>
+                          {row.map((col, idx) => <td key={idx}>{col}</td>)}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>                  
+                ))}
+            </div> */}
+            <div style={{ marginTop: "3rem" }}>
                 {error ? error : !data || !data.length ? "No data" : data.map((row, idx) => (
                     <div key={idx} style={{display:'flex'}}>
                         {row.map((col, idx) => <div key={idx}>{col}</div>)}
